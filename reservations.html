@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <!-- Page title -->
+  <title>Reservations | The Haukai Restaurant</title>
+
+
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" title="style">   <!-- CSS tyle used-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">       <!-- W3.CSS framework import-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for FB link icon  -->
+  <link href='https://fonts.googleapis.com/css?family=Telex' rel='stylesheet'>    <!-- Linked web font used in h1  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">  <!-- Bootstrap-->
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <!-- Banner-->
+    <header>
+        <h1 class ="header">Haukai | Serving traditional Māori food</h1>
+    </header> 
+
+    <!-- Navigation bar-->
+    <nav>
+      <!-- Nav bar for wide screens-->
+      <div role="navigation" class="w3-bar w3-card-4 w3-black w3-padding-16">
+        <a href="./index.html" class="w3-bar-item w3-cursive w3-button">THE HAUKAI RESTAURANT</a>
+        <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small active">RESERVATIONS</a>
+        <a href="./menu.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">MENU</a>  
+        <a href="./hours.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">HOURS</a>
+        <a href="./contact.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">CONTACT</a>
+        <a href="./index.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">HOME</a>
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+      </div>
+     <!-- Nav bar for small screens-->    
+      <div role="navigation" id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+        <a href="./index.html" class="w3-bar-item w3-button w3-padding-16">HOME</a>
+        <a href="./contact.html" class="w3-bar-item w3-button w3-padding-16">CONTACT</a>
+        <a href="./hours.html" class="w3-bar-item w3-button w3-padding-16">HOURS</a>
+        <a href="./menu.html" class="w3-bar-item w3-button w3-padding-16" >MENU</a>
+        <a href="./reservations.html" class="w3-bar-item w3-button w3-padding-16 active">RESERVATIONS</a>
+      </div>
+    </nav>  
+    
+    <!-- content -->
+
+    <!-- Here is our page's main content  -->
+    <main>
+      <div role="main" class="w3-container w3-center">
+        <br><br>
+        <h2>Make a reservation</h2>
+        <br>
+        <p>We are open from Wednesday to Sunday</p>
+        <p>5pm - 11pm</p>
+        <br>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdowbeyJER6aqQ7CQDPWKUdyLuq6xAAzo07TuznIetQuqK0cA/viewform?embedded=true" class="responsiveForm"></iframe>
+      </div>
+    </main>
+
+    <!-- end of content -->
+
+    <footer> 
+        <div role="navigation" class="w3-bar w3-black w3-card-4 w3-padding-16">
+            <a href="./menu.html" class="w3-bar-item w3-button w3-hover-light-grey">MENU</a>
+            <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-light-grey active">RESERVATIONS</a>
+            <a href="https://www.facebook.com/haukaibistro/" class="fa fa-facebook w3-right">.</a> 
+        </div>    
+    </footer>
+
+    <!-- avaScript code necessary for the menu collapse to work -->
+    <script>
+            function myFunction() {
+              var x = document.getElementById("demo");
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+    </script>
+</body>
+</html>

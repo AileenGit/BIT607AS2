@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <!-- Page title -->
+  <title> Menu | The Haukai Restaurant</title>
+
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" title="style">   <!-- CSS tyle used-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">       <!-- W3.CSS framework import-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for FB link icon  -->
+  <link href='https://fonts.googleapis.com/css?family=Telex' rel='stylesheet'>    <!-- Linked web font used in h1  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">  <!-- Bootstrap -->
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- Banner-->
+  <header>
+    <h1 class ="header">Haukai | Serving traditional Māori food</h1>
+  </header> 
+
+  <!-- Navigation bar-->
+  <nav>
+    <!-- Nav bar for wide screens-->
+    <div role="navigation" class="w3-bar w3-card-4 w3-black w3-padding-16">
+      <a href="./index.html" class="w3-bar-item w3-cursive w3-button">THE HAUKAI RESTAURANT</a>
+      <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small ">RESERVATIONS</a>
+      <a href="./menu.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small active">MENU</a>  
+      <a href="./hours.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">HOURS</a>
+      <a href="./contact.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">CONTACT</a>
+      <a href="./index.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small ">HOME</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- Nav bar for small screens-->    
+    <div role="navigation" id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+      <a href="./index.html" class="w3-bar-item w3-button w3-padding-16">HOME</a>
+      <a href="./contact.html" class="w3-bar-item w3-button w3-padding-16">CONTACT</a>
+      <a href="./hours.html" class="w3-bar-item w3-button w3-padding-16">HOURS</a>
+      <a href="./menu.html" class="w3-bar-item w3-button w3-padding-16 active" >MENU</a>
+      <a href="./reservations.html" class="w3-bar-item w3-button w3-padding-16">RESERVATIONS</a>
+    </div>   
+  </nav>  
+
+  <!-- content -->
+  <!-- Here is our page's main content  -->
+  <main>
+    <div role="main" class="w3-container"> 
+      <div class="w3-center">
+        <br><br>
+        <h2 >Menu</h2><br>
+        <p>You may download a PDF Menu below or scroll down to view what we offer.</p>
+        <a href="./menu.pdf" target="_blank" class="w3-button w3-black w3-round-large" role="button">Download</a>    
+      </div>
+
+      <div>
+        <br>
+        <h2>Appetizers</h2>
+        <img src="./images2/pexels-elevate-1267320.jpg" alt="Available appetizers" title="Available appetizers" class="responsivePh">
+        <dl>
+          <dt>REWENA BREAD $10</dt>
+          <dd>Traditional Māori bread.</dd>
+          <dt>PAUA FRITTER $16</dt>
+          <dd>Finely diced pieces of paua, served with a side salad and horopito dressing.</dd>
+          <dt>RAW FISH $20</dt>
+          <dd>Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</dd>
+          <dt>POACHED SALMON $22</dt>
+          <dd>Salmon poached in an orange and pistachio glaze, served with rewena bread.</dd>
+          <dt>SEAFOOD BASKET $25</dt>
+          <dd>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</dd>
+        </dl>
+        <br>
+        <h2>Main</h2>
+        <div class="row">
+          <div class="col-sm-6"> <img src="./images2/pexels-dana-tentis-262959.jpg" alt="Fish of the day" title="Fish of the day" class="responsivePh"><strong>FISH OF THE DAY $25 </strong> <p>Beer-battered fish and kumara fries, served with a side salad and homemade tartare.</p></div>
+          <div class="col-sm-6"> <img src="./images2/pexels-rodnae-productions-10432468.jpg" alt="Mussels and scallops" title="Mussels and scallops" class="responsivePh"><strong>MUSSELS AND SCALLOPS $25 </strong> <p>Steamed mussel & scallop mousse, honey and soy broth.</p></div>
+          <div class="col-sm-6"> <img src="./images2/pexels-nadin-sh-9392766.jpg" alt="Seafood Chowder" title="Seafood Chowder" class="responsivePh"><strong>SEAFOOD CHOWDER $30 </strong> <p>Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with flatbread.</p></div>
+          <div class="col-sm-6"> <img src="./images2/pexels-rachel-claire-8112938.jpg" alt="Pork Belly" title="Pork Belly" class="responsivePh"><strong>PORK BELLY $30 </strong> <p>Slow-cooked pork belly served on a bed of apple slaw with roasted kumara and crispy noodles.</p></div>
+          <div class="col-sm-6"> <img src="./images2/pexels-team-picsfast-8753745.jpg" alt="Lamb Steak" title="Lamb Steak" class="responsivePh"><strong>LAMB STEAK $33 </strong> <p>New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed carrots, roasted butternut squash and mushroom jus.</p></div>
+          <div class="col-sm-6"> <img src="./images2/pexels-valeria-boltneva-1307658.jpg" alt="Venison Steak" title="Venison Steak" class="responsivePh"><strong>VENISON $33 </strong> <p>Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine jus.</p></div>
+        </div>
+        <br>
+        <h2>Dessert</h2>
+        <div class="row">
+          <div class="col-sm-6"> <img src="./images2/pexels-valeria-boltneva-1893566.jpg" alt="Kapiti Ice cream" title="Kapiti Ice cream" class="responsivePh"><strong>KAPITI ICE CREAM $10 </strong><p>Check for daily specials.</p></div>
+          <div class="col-sm-6"> <img src="./images2/pexels-amanda-lim-8745292.jpg" alt="Steamed pudding" title="Steamed pudding" class="responsivePh"><strong>STEAMED PUDDING $12 </strong><p>Golden-syrup-flavoured steamed pudding, served with vanilla ice cream.</p></div>
+          <div class="col-sm-6"> <img src="./images2/pexels-furkanfdemir-6310078.jpg" alt="Mini Pavlova" title="Mini Pavlova" class="responsivePh"><strong>MINI PAVLOVA $16 </strong><p> Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit.</p></div>
+          <div class="col-sm-6"> <img src="./images2/pexels-geraud-pfeiffer-6607420.jpg" alt="Banoffee Pie" title="Banoffee Pie" class="responsivePh"><strong>BANOFFEE PIE $16 </strong> <p>Toffee, fresh bananas and fresh cream.</p></div>
+        </div>
+        <br>
+        <h2>Beverages</h2>
+        <div class="row">
+          <div class="col-sm-6"> 
+            <img src="./images2/pexels-pixabay-33265.jpg" alt="wine bottle and wine glasses" title="wine bottle and wine glasses" class="responsivePh">
+          </div>
+          <div class="col-sm-6"> 
+            <h3>Red</h3>
+            <br>
+            <ul>
+              <li>Terrace Edge Pinot Noir, 2012, Wairarapa  $53/13 (B/G) </li>
+              <li>Altitude Pinot Noir, 2010, Marlborough $64/15</li>
+              <li>Greystone Pinot Noir, 2012, Wairarapa $73/17</li>
+              <li>Terrace Edge, Syrah, 2012, Wairarapa $53/13 </li>
+              <li>Altitude Syrah, 2010, Marlborough  $64/15 </li>
+              <li>Greystone Syrah, 2012, Wairarapa $73/17 </li>
+              <li>Pegasus Bay Merlot, 2013, Waipara $65/14 </li>
+              <li>Pegasus Bay Pinot Noir, 2013, Waipara $110 (B)</li>
+            </ul>
+            <br><br>
+
+            <h3>White</h3>
+            <br>
+            <ul>
+              <li>Spade Oak Pinot Gris, 2011, Gisborne $40/10 (B/G)</li>
+              <li>Maude Pinot Gris, 2017, Otago $49.50/11  </li>
+              <li>Charles Wiffen Chardonnay, 2013, Otago $48/11</li>
+              <li>Amisfield, Riesling, 2016, Otago $53/12</li>
+              <li>Lamont Riesling, 2010, Otago $57/13</li>
+              <li>Elephant Hill Viognier, 2013, Hawke’s Bay $55/12 </li>
+              <li>Folium Sauvignon Blanc, 2011, Marlborough $52/11 </li>
+              <li>Billecart-Salmon Brut Reserve, France $120 (B)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6"> 
+            <br>
+            <h3>Beer and Cider</h3> 
+            <br>
+            <ul>
+              <li>Garage project range $11 </li>
+              <li>Tuatara range $11</li>
+              <li>Panhead range $10</li>
+              <li>Coopers ale $10</li>
+              <li>Heineken $11</li>
+              <li>Moa cider $10</li>
+              <li>Crooked cider $10</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <img src="./images2/pexels-vedanti-250465.jpg" alt="beer and cider" title="beer and cider" class="responsivePh">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6"> 
+            <br>
+            <img src="./images2/pexels-susanne-jutzeler-sujufoto-1640517.jpg" alt="Coffee and soda" title="Coffee and soda" class="responsivePh">
+          </div>
+          <div class="col-sm-6"> 
+            <br>
+            <h3>Non-Alcoholic</h3>
+            <br>
+            <ul>
+              <li>Mineral water $4 </li>
+              <li>Soft drinks $4</li>
+              <li>Juice $4</li>
+              <li>Coffee $4.5</li>
+              <li>Tea $3.5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- end of content -->
+  <br>
+  <br>
+  
+  <!-- footer -->
+  <footer> 
+    <div role="navigation" class="w3-bar w3-black w3-card-4 w3-padding-16">
+      <a href="./menu.html" class="w3-bar-item w3-button w3-hover-light-grey active">MENU</a>
+      <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-light-grey">RESERVATIONS</a>
+      <a href="https://www.facebook.com/haukaibistro/" class="fa fa-facebook w3-right">.</a> 
+    </div>        
+  </footer>
+
+  <!-- JavaScript code necessary for the menu collapse to work -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+</html>

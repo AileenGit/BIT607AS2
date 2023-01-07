@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <!-- Page title -->
+  <title>Hours | The Haukai Restaurant</title>
+
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" title="style">   <!-- CSS tyle used-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">       <!-- W3.CSS framework import-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for FB link icon  -->
+  <link href='https://fonts.googleapis.com/css?family=Telex' rel='stylesheet'>    <!-- Linked web font used in h1  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">  <!-- Bootstrap-->
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Banner-->
+    <header>
+        <h1 class ="header">Haukai | Serving traditional Māori food</h1>
+    </header> 
+
+    <nav>
+      <!-- Nav bar for desktop-->
+      <div role="navigation" class="w3-bar w3-card-4 w3-black w3-padding-16">
+        <a href="./index.html" class="w3-bar-item w3-cursive w3-button">THE HAUKAI RESTAURANT</a>
+        <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small ">RESERVATIONS</a>
+        <a href="./menu.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">MENU</a>  
+        <a href="./hours.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small active">HOURS</a>
+        <a href="./contact.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">CONTACT</a>
+        <a href="./index.html" class="w3-bar-item w3-button w3-hover-light-grey w3-right w3-hide-small">HOME</a>
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+      </div>
+      <!-- Nav bar for small screens-->    
+      <div role="navigation" id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+        <a href="./index.html" class="w3-bar-item w3-button w3-padding-16 ">HOME</a>
+        <a href="./contact.html" class="w3-bar-item w3-button w3-padding-16">CONTACT</a>
+        <a href="./hours.html" class="w3-bar-item w3-button w3-padding-16 active">HOURS</a>
+        <a href="./menu.html" class="w3-bar-item w3-button w3-padding-16" >MENU</a>
+        <a href="./reservations.html" class="w3-bar-item w3-button w3-padding-16">RESERVATIONS</a>
+      </div>       
+    </nav>  
+    
+    <!-- content -->
+    <!-- Here is our page's main content  -->
+    <main>
+      <div role="main" class="w3-container">
+        <div class="row">
+          <div class="col-sm-6">
+            <br><br>
+            <img src="./images2/pexels-amina-filkins-5410138.jpg" alt="open sign" title="open sign" class="responsivePh">
+            <br>
+          </div>
+          <div class="col-sm-6">
+            <br><br>
+            <h2 >Opening Hours</h2> <br>
+            <p> Monday and Tuesday - Closed</p>
+            <p> Wednesday to Sunday - 5pm to 11pm</p> <br>
+            <h2>Address</h2> <br>
+            <p> 1 Island Street</p>
+            <p> Kerikeri, Bay of Islands</p> <br>
+          </div>
+        </div>
+      </div>
+      <!-- Calendar -->      
+      <div role = "main" class="responsiveCal">
+        <div class="deskContent"><iframe src="https://calendar.google.com/calendar/embed?src=thehaukai.restaurant22%40gmail.com&ctz=Pacific%2FAuckland" title="Google calendar" width="800" height="600"></iframe></div>
+        <div class="phoneContent"><iframe src="https://calendar.google.com/calendar/embed?src=thehaukai.restaurant22%40gmail.com&ctz=Pacific%2FAuckland" title="Google calendar" width="280" height="500"></iframe></div>
+      </div>
+      <br>     
+    </main>
+    <!-- end of content -->
+    <!-- footer -->
+    <footer> 
+        <div role="navigation" class="w3-bar w3-black w3-card-4 w3-padding-16">
+            <a href="./menu.html" class="w3-bar-item w3-button w3-hover-light-grey">MENU</a>
+            <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-light-grey">RESERVATIONS</a>
+            <a href="https://www.facebook.com/haukaibistro/" target ="_blank" class="fa fa-facebook w3-right">.</a> 
+        </div>     
+    </footer>
+
+  <!-- JavaScript code necessary for the menu collapse to work -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+</html>

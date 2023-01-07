@@ -1,0 +1,101 @@
+/**************************** Universal box sizing ****************************/
+* {
+    box-sizing: border-box;
+}
+
+/****************************  Style the header *************************** */
+.header {
+    background-color:white;
+    text-align: center;
+    padding: 15px;
+}
+/****************************  Style the main *************************** */
+.main {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/**************************** Body font*************************** */
+body {
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size: 14px;                  /* sets font size to 14 */
+    color: black;                   /* sets front color to black */
+    margin: 0;                        /* sets margin to zero */
+    padding: 0;                       /* sets padding to zero */
+    line-height: 1.8rem;              /* sets line height */
+    }
+/**************************** Headings font*************************** */
+h1{
+    font-family: Telex, arial, sans-serif;    /* Telex is one of the web fonts used */
+    font-size: 32px;                /* sets font size to 32px */
+
+    }
+h2{
+    font-family: Telex, arial, sans-serif;    /* Telex is one of the web fonts used */
+    font-size: 28px;                /* sets font size to 28px */  
+    }
+h3{
+    font-family: Telex, arial, sans-serif;    /* Telex is one of the web fonts used */
+    font-size: 20px;                /* sets font size to 28px */
+    }
+   
+/**************************** Link Settings ***************************/
+a.link {
+    color: black; 
+    } 
+a.active {
+        color: black; 
+        background-color: lightgray; 
+    } 
+
+/**************************** MEDIA QUERIES ****************************/
+/* Responsive texts - makes the <h1> <h2> <h3> smaller on a smaller screen */
+@media screen and (max-width:600px) {
+
+    header h1 {
+        font-size: 1.5em;
+    }
+    main h2, div h2, div h3 {
+        font-size: 1.3em;
+    }
+    
+ }
+
+/**************************** FB LINK ****************************/
+.fa {
+    padding: 14px 0 0 0;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    }  
+.fa-facebook {  
+    color: white;  
+  }
+
+/**************************** Responsive Style  ****************************/
+.responsivePh {
+    width: 100%;        /*image is 100% of the containing block*/
+    height: auto;       /*browser calculates the height*/
+}
+.responsiveMap {
+    width: 100%;        /*Map width is 100% of the containing block*/
+    height: 450px; 
+    border-style: solid; 
+    border-width: 5px;
+    border-color: black;      
+}
+.responsiveCal {         /*responsive calendar*/
+    position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+    }
+     
+.responsiveCal iframe {  /*responsove calendar iframe*/
+    position: absolute; top:0; left: 0; width: 100%; height: 100%;
+    padding: 14px;
+    border-style: none;
+    }
+.responsiveForm {
+        width: 100%;        /*form is 100% of the containing block*/
+        height: 888px;  
+        border-width: 0px;      
+    }
